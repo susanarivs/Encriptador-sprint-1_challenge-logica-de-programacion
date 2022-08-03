@@ -1,0 +1,174 @@
+body{
+    position: relative;
+    width: 940px;
+    background: #1A867B;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.encabezado{
+    width:940px;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+
+.contenido{
+    width: 940px;
+    margin-bottom: 6%;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: inline-flex;
+}
+
+.panelIzq{
+    width: 65%;
+    float: left;
+    text-align: -webkit-center;
+}
+
+.elementos{
+    display: table-caption;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mensaje{
+    width: 470px;
+    height: 275px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: ##121212;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    background: #06515D;
+    resize: none;
+    border: none;
+    outline: none; 
+}
+
+.p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.botones{
+    text-align: center;
+    width: 45%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgb(83, 83, 83);
+    cursor:pointer;
+    transition: 250ms all
+}
+
+.botones:hover{
+    transform: scale(1.05);
+}
+
+#btnEnc{
+    background: #111212;
+    color:#D8DFE8;
+    border: 1px solid #D8DFE8;
+    border-radius: 24px;
+}
+
+#btnDes{
+    background: #111212;
+    color:#D8DFE8;
+    border: 1px solid #D8DFE8;
+    border-radius: 24px;
+}
+
+.panelDer{
+    width: 35%;
+    float: right;
+    border-radius: 24px;
+    background: #171717;
+    text-align: center;
+}
+
+.elementos2{
+    display: table-caption;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.etiqueta{
+    width: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.mostrar{
+    width: 237px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 52px;
+    font-size:revert;
+    color: #E0BDBD;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    resize: none;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#btnCopiar{
+    display: none;
+    width: 90%;
+    background: #E0BDBD;
+    color:#111111;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.rodapie{
+    width: 940px;
+    margin-top: 30px;
+    margin-left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Diseño Responsivo*/
+@media screen and (max-width:480px) {
+
+    body, .encabezado, .contenido, .panelIzq, .mensaje, .panelDer, .rodapie {
+        width: auto;
+    }
+
+    .encabezado, .contenido, .elementos2, .rodapie{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .contenido{
+        display: inline-grid;
+    }
+
+    .mensaje{
+        height: auto;
+    }
+
+    .botones, #btnCopiar{
+        width: 40%;
+    }
+
+    .rodapie{
+        padding-bottom: 10%;
+        padding-left: 15%;
+    }
+}
